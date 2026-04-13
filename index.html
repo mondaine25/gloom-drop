@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GloomDrop – Privacy Policy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Bebas+Neue&display=swap');
+
+  :root {
+    --bg: #0a0c12;
+    --surface: #111520;
+    --border: #1e2535;
+    --accent: #00d4ff;
+    --accent2: #bf5fff;
+    --text: #e8eaf0;
+    --muted: #6b7280;
+    --danger: #ff4060;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* animated background grid */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  header {
+    position: relative;
+    z-index: 1;
+    padding: 60px 24px 40px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(0,212,255,0.04) 0%, transparent 100%);
+  }
+
+  .logo-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(48px, 10vw, 96px);
+    letter-spacing: 0.05em;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .logo-sub {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .badge {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 6px 16px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+
+  .badge span { color: var(--accent); }
+
+  main {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 24px 100px;
+  }
+
+  .section {
+    margin-bottom: 48px;
+    padding: 32px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2), transparent);
+    opacity: 0.6;
+  }
+
+  .section-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--accent);
+    margin-bottom: 8px;
+    opacity: 0.7;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+
+  p { color: #a0a8b8; margin-bottom: 12px; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    margin: 12px 0;
+  }
+
+  ul li {
+    color: #a0a8b8;
+    padding: 6px 0 6px 20px;
+    position: relative;
+  }
+
+  ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 13px;
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .highlight {
+    display: inline-block;
+    background: rgba(0,212,255,0.08);
+    border: 1px solid rgba(0,212,255,0.2);
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 13px;
+    color: var(--accent);
+    font-family: monospace;
+  }
+
+  .contact-card {
+    background: rgba(0,212,255,0.05);
+    border: 1px solid rgba(0,212,255,0.15);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 16px;
+  }
+
+  .contact-card p { margin-bottom: 6px; }
+
+  footer {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 32px 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .dev-name {
+    color: var(--accent2);
+    font-weight: 500;
+  }
+
+  @media (max-width: 600px) {
+    .section { padding: 24px 20px; }
+    main { padding: 40px 16px 80px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-title">GloomDrop</div>
+  <div class="logo-sub">Mobile Game by Leonardo Mondaine</div>
+  <div class="badge">Privacy Policy · <span>Last updated: April 2026</span></div>
+</header>
+
+<main>
+
+  <div class="section">
+    <div class="section-number">01 · OVERVIEW</div>
+    <h2>Introduction</h2>
+    <p>GloomDrop is a mobile game developed by Leonardo Gabriel da Silva (publicly known as <strong>Leonardo Mondaine</strong>). This Privacy Policy explains how we handle information when you play GloomDrop on Android devices.</p>
+    <p>By downloading and playing GloomDrop, you agree to the practices described in this policy. If you do not agree, please do not use the app.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">02 · DATA WE COLLECT</div>
+    <h2>Information Collection</h2>
+    <p>GloomDrop is designed with privacy in mind. We collect minimal data necessary to operate the game and serve advertisements.</p>
+    <ul>
+      <li><strong>Advertising data</strong> — GloomDrop uses Google AdMob to display ads. AdMob may collect device identifiers, IP address, and interaction data to serve relevant ads.</li>
+      <li><strong>Game progress</strong> — Your level progress and settings are stored locally on your device only. We do not store this data on external servers.</li>
+      <li><strong>Crash reports</strong> — Anonymous crash data may be collected automatically by the Android platform to help us fix bugs.</li>
+    </ul>
+    <p>We do <strong>not</strong> collect your name, email address, phone number, or any personally identifiable information directly.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">03 · ADVERTISING</div>
+    <h2>Google AdMob</h2>
+    <p>GloomDrop displays ads provided by Google AdMob. AdMob is operated by Google LLC and is subject to Google's own privacy policy.</p>
+    <ul>
+      <li>AdMob may use cookies and device identifiers to serve personalized or non-personalized ads.</li>
+      <li>AdMob may collect data such as device type, OS version, and general location for ad targeting purposes.</li>
+      <li>You can opt out of personalized advertising through your device settings under <span class="highlight">Google → Ads → Opt out of Ads Personalization</span>.</li>
+    </ul>
+    <p>For more information, visit: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">04 · CHILDREN</div>
+    <h2>Children's Privacy</h2>
+    <p>GloomDrop is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+    <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us and we will take steps to remove such information.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">05 · YOUR RIGHTS</div>
+    <h2>Data Rights & Control</h2>
+    <p>Depending on your location, you may have the following rights regarding your data:</p>
+    <ul>
+      <li>The right to know what data is collected about you</li>
+      <li>The right to request deletion of your data</li>
+      <li>The right to opt out of personalized advertising</li>
+      <li>The right to withdraw consent at any time</li>
+    </ul>
+    <p>Since GloomDrop stores game data only locally on your device, you can delete all game data by uninstalling the app.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">06 · THIRD PARTIES</div>
+    <h2>Third-Party Services</h2>
+    <p>GloomDrop integrates the following third-party service:</p>
+    <ul>
+      <li><strong>Google AdMob</strong> — Ad monetization. <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+      <li><strong>Google Play Services</strong> — App distribution and device services. <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+    </ul>
+    <p>We are not responsible for the privacy practices of third-party services. We encourage you to review their policies directly.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">07 · CHANGES</div>
+    <h2>Policy Updates</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date at the top. We encourage you to review this policy periodically.</p>
+    <p>Continued use of GloomDrop after any changes constitutes your acceptance of the updated policy.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">08 · CONTACT</div>
+    <h2>Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
+    <div class="contact-card">
+      <p><strong>Developer:</strong> Leonardo Gabriel da Silva (Leonardo Mondaine)</p>
+      <p><strong>Email:</strong> <a href="mailto:leonardomondaine@gmail.com">leonardomondaine@gmail.com</a></p>
+      <p><strong>Location:</strong> Cascavel, Paraná, Brazil</p>
+      <p><strong>App:</strong> GloomDrop — Android Mobile Game</p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 <span class="dev-name">Leonardo Mondaine</span> · All rights reserved · GloomDrop</p>
+  <p style="margin-top:8px;">This policy applies to the GloomDrop Android application.</p>
+</footer>
+
+</body>
+</html>
